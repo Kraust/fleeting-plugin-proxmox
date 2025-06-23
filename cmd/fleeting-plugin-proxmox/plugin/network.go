@@ -2,7 +2,6 @@ package plugin
 
 import (
 	"errors"
-	"log"
 	"net"
 
 	"github.com/luthermonson/go-proxmox"
@@ -47,7 +46,6 @@ func determineAddresses(networkInterfaces []*proxmox.AgentNetworkIface, requeste
 //nolint:nakedret,nonamedreturns
 func determinePossibleAddresses(networkInterfaces []*proxmox.AgentNetworkIface, requestedInterface string) (internalIPv4, externalIPv4, internalIPv6, externalIPv6 string) {
 	for _, networkInterface := range networkInterfaces {
-		log.Printf("%#+v", networkInterface)
 		if networkInterface.Name != requestedInterface {
 			continue
 		}
