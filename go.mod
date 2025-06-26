@@ -1,13 +1,15 @@
 module github.com/lukask32/fleeting-plugin-proxmox
 
-go 1.22.3
+go 1.23.0
+
+toolchain go1.24.4
 
 require (
 	github.com/hashicorp/go-hclog v1.6.3
-	github.com/luthermonson/go-proxmox v0.0.0-beta6
-	github.com/stretchr/testify v1.9.0
+	github.com/luthermonson/go-proxmox v0.2.2
+	github.com/stretchr/testify v1.10.0
 	gitlab.com/gitlab-org/fleeting/fleeting v0.0.0-20240531144118-752ebc78a2c0
-	golang.org/x/sync v0.10.0
+	golang.org/x/sync v0.15.0
 )
 
 require (
@@ -17,12 +19,13 @@ require (
 	github.com/bodgit/windows v1.0.1 // indirect
 	github.com/buger/goterm v1.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/diskfs/go-diskfs v1.4.0 // indirect
+	github.com/diskfs/go-diskfs v1.6.0 // indirect
+	github.com/djherbis/times v1.6.0 // indirect
 	github.com/fatih/color v1.17.0 // indirect
 	github.com/go-logr/logr v1.4.2 // indirect
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
-	github.com/gorilla/websocket v1.5.1 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
 	github.com/hashicorp/go-plugin v1.6.1 // indirect
 	github.com/hashicorp/go-uuid v1.0.3 // indirect
@@ -43,11 +46,11 @@ require (
 	github.com/oklog/run v1.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/tidwall/transform v0.0.0-20201103190739-32f242e2dbde // indirect
-	golang.org/x/crypto v0.31.0 // indirect
-	golang.org/x/mod v0.18.0 // indirect
-	golang.org/x/net v0.26.0 // indirect
-	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/crypto v0.39.0 // indirect
+	golang.org/x/mod v0.25.0 // indirect
+	golang.org/x/net v0.41.0 // indirect
+	golang.org/x/sys v0.33.0 // indirect
+	golang.org/x/text v0.26.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240604185151-ef581f913117 // indirect
 	google.golang.org/grpc v1.64.1 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
